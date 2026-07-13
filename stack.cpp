@@ -34,7 +34,6 @@ class stack
         }
     }
     void top();
-    void display();
 };
 int main()
 {
