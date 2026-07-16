@@ -77,6 +77,24 @@ class Link
             }
         }
     }
+    int Delete(int x)
+    {
+        if(first==NULL)
+        {
+            cout<<"dcjsb";
+        }
+        else{
+            Node *temp=first;
+            while(temp!=NULL && temp->link->data!=x)
+            {
+                temp=temp->link;
+            }
+            if(temp!=NULL)
+            {
+                temp->link=temp->link->link;
+            }
+        }
+    }
     int printl()
     {
         Node *temp=first;
@@ -115,5 +133,7 @@ int main()
     cout<<"Enter the new data";
     cin>>d;
     l.insertbefore(b,d);
+    l.printl();
+    l.Delete(d);
     l.printl();
 }
