@@ -37,7 +37,6 @@ int add(poly p1[],poly p2[],poly p3[],int l1,int l2)
         p3[k]=p1[i];
         i++,k++;
     }
-    int maxSize = (l1 > l2) ? l1 : l2;
     for(int a=0;a<k;a++)
     cout << p3[a].coef << "x^" << p3[a].expo << "+";
 }
