@@ -18,7 +18,7 @@ public:
 
 class Linklist
 {
-public:
+    public:
     Node *first = NULL;
 
     void Insert(int c, int e)
