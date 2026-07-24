@@ -93,6 +93,8 @@ class Link
             {
                 temp->link=temp->link->link;
             }
+            return 1;
+            delete temp;
         }
     }
     int printl()
