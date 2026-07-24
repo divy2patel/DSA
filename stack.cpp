@@ -38,8 +38,19 @@ class stack
 int main()
 {
     stack <int>s;
-    s.push(12);
+    /*s.push(12);
     s.push(21);
     cout<<s.pop()<<endl;
-    s.push(5);
+    cout<<s.pop()<<endl;
+    s.push(5);*/
+    int n;
+    for(int i=0;i<5;i++)
+    {
+        cin>>n;
+        s.push(n);   
+    }
+    for(int i=0;i<5;i++)
+    {
+        cout<<s.pop()<<endl;
+    }
 }
