@@ -57,6 +57,8 @@ int main()
     cq.push(1);
     cq.push(2);
     cq.push(3);
+    cq.pop();
+    cq.push(4);
     while(!cq.empty())
     {
         cout<<cq.front()<<" ";
