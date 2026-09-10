@@ -1,12 +1,12 @@
 #include <iostream>
 using namespace std;
 
-void towerOfHanoi(int n, char from, char aux, char to) {
+void towerOfHanoi(int n, char A, char B, char C) {
     if (n == 0) return;
     
-    towerOfHanoi(n - 1, from, to, aux);
-    cout << "Move disk " << n << " from " << from << " to " << to << endl;
-    towerOfHanoi(n - 1, aux, from, to);
+    towerOfHanoi(n - 1, A, C , B);
+    cout << "Move disk " << n << " from " << A << " to " << C << endl;
+    towerOfHanoi(n - 1, B, A, C);
 }
 
 int main() {
